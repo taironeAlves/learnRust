@@ -81,4 +81,6 @@ fn main() {
         "{}, level {}. Remote: {}. Grades: {}, {}, {}, {}. Average: {}",
         user_2.name, user_2.level, user_2.remote, mark_2.0, mark_2.1, mark_2.2, mark_2.3, mark_2.4
     );
+
+    // Exemplo de enumeração
 }
