@@ -83,4 +83,9 @@ fn main() {
     );
 
     // Exemplo de enumeração
+    enum WebEvent {
+        WELoad,
+        WEKeys(String, char),
+        WEClick { x: i64, y: i64 },
+    }
 }
