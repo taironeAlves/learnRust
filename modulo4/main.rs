@@ -28,4 +28,11 @@ fn main() {
     fruit.push("Banana");
     fruit.push("Cherry");
     println!("Fruits: {:?}", fruit);
+
+    //Removendo o último valor do Vetor
+    println!("Pop off: {:?}", fruit.pop());
+    println!("Fruits: {:?}", fruit);
+
+    //Acessar elemento inexistente
+    println!("Elemento 10 {}", fruit[10]);
 }
