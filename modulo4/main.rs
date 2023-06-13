@@ -35,4 +35,5 @@ fn main() {
 
     //Acessar elemento inexistente
     println!("Elemento 10 {}", fruit[10]);
+    
 }
