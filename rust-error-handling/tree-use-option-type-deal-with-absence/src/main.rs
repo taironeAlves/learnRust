@@ -1,3 +1,5 @@
+use std::io::Empty;
+
 fn main() {
     /*
     Aqui praticaremos o uso do enum option<t> que possui dois tipos de retorno
@@ -40,4 +42,43 @@ fn main() {
             None => println!("nada"),
         }
     }
+
+    /*
+    Testando valores com o if let
+     */
+
+    let a_number: Option<u8> = Some(7);
+
+    match a_number {
+        Some(7) => println!("Esse é o numero 7"),
+        _ => {}
+    }
+
+    /* Obtendo o mesmo resultado do match com o if let  */
+
+    if let Some(7) = a_number {
+        println!("Numero 7 encontrado");
+    }
+
+    /* Usando o unwrap e expect, esses podem gerar panic caso receba um None */
+
+    let gift = Some("candy");
+    assert_eq!(gift.unwrap(), "candy");
+
+    /* Aqui de proposito vai retornar um None para gerar panic. 
+    
+    let empty_gift: Option<&str> = None;
+    assert_eq!(empty_gift.unwrap(), "candy");
+
+    */
+
+    /* O expect faz a mesma coisa, mas gera mensagem personalizada no panic
+    */
+
+    let a = Some("value");
+    assert_eq!(a.expect("frutas são boas"), "value");
+
+    let b: Option<&str> = None;
+    b.expect("Deu ruim");
+
 }
