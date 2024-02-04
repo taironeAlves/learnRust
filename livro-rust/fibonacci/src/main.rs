@@ -22,5 +22,5 @@ fn fibonatti(n: usize) -> Vec<u32> {
     }
 
     total
-    // parei na pagina 83
+    // parei na pagina 101
 }
