@@ -15,8 +15,7 @@ fn main() {
     let _third = &v[4];
     let _third = v.get(2);
     
-
-   
+  
 }
 
 // Parei pagina  164
